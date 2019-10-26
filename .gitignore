@@ -1,0 +1,6 @@
+#ignoring node
+node_modules
+package-lock.json
+
+#ignoring .css files
+css

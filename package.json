@@ -1,0 +1,29 @@
+{
+  "name": "locastic_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --output-style compressed -o css main.scss",
+    "watch-sass": "node-sass --output css main.scss -w",
+    "autoprefixer": "postcss -u autoprefixer -r css/*",
+    "create-css": "mkdir css",
+    "build": "npm i && npm run create-css && npm run sass && npm run autoprefixer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonioSolari/Locastic_task.git"
+  },
+  "author": "Antonio Solari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonioSolari/Locastic_task/issues"
+  },
+  "homepage": "https://github.com/AntonioSolari/Locastic_task#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.0",
+    "node-sass": "^4.13.0",
+    "normalize.css": "^8.0.1",
+    "postcss-cli": "^6.1.3"
+  }
+}

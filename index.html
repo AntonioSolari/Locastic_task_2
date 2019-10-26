@@ -5,34 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Locastic</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <nav class="menu">
+        <img src="/css-assets/locastic-logo-white.svg"/>
+        <nav class="menu" role="navigation">
             <ul class="menu-list">
-                <li class="menu-list-item"></li>
-                <li class="menu-list-item"></li>
-                <li class="menu-list-item"></li>
-                <li class="menu-list-item"></li>
+                <li class="menu-item"><a href="/">Home</a></li>
+                <li class="menu-item">
+                    <a href="/">Works</a> 
+                    <ul class="menu-item-dropdown">
+                        <li><a href="#">Manistra na pome</a></li>
+                        <li><a href="#">Biftek - Medium rare+</a></li>
+                        <li><a href="#">Picigin 2016</a></li>
+                        <li><a href="#">Još jedan link eto tako</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="/">About Us</a></li>
+                <li class="menu-item"><a href="/">Contact</a></li>
             </ul>
         </nav>
-        <div class="slider">
-
-        </div>
     </header>
-    <div class="articles">
-        <div class="articles-article"></div>
-        <div class="articles-article"></div>
-        <div class="articles-article"></div>
-        <div class="articles-article"></div>
-        <div class="articles-article"></div>
-        <div class="articles-article"></div>
+    <div class="slideshow">
+        <h1 class="slideshow__title">Moj najlišši naslov ikad</h1>
+        <img class="slideshow__img" src="./css-assets/slider-image-1024x250.png"/>
+        <img class="slideshow__img" src="./css-assets/slider-image-1024x250.png"/>
+        <img class="slideshow__img" src="./css-assets/slider-image-1024x250.png"/>
+        <ul class="slideshow__nav">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div></div>
     </div>
-    <div class="button-load"></div>
-    <div class="contact-form"></div>
-    <footer>
+    <div class="container">
+        <div class="article-list">
+            <div class="article-item">
+                <img class="article-item__image" src="./css-assets/content-image.png"/>
+                <h2 class="article-item__title">Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
+                <p class="article-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident alias veritatis perferendis facilis soluta illo accusamus esse odio inventore.</p>
+                <a class="article-item__link" href="/">View full article</a>
+            </div>
+            <div class="article-item">
+                <img class="article-item__image" src="./css-assets/content-image.png"/>
+                <h2 class="article-item__title">Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
+                <p class="article-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident alias veritatis perferendis facilis soluta illo accusamus esse odio inventore.</p>
+                <a class="article-item__link" href="/">View full article</a>
+            </div>
+            <div class="article-item">
+                <img class="article-item__image" src="./css-assets/content-image.png"/>
+                <h2 class="article-item__title">Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
+                <p class="article-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident alias veritatis perferendis facilis soluta illo accusamus esse odio inventore.</p>
+                <a class="article-item__link" href="/">View full article</a>
+            </div>
+            <div class="article-item">
+                <img class="article-item__image" src="./css-assets/content-image.png"/>
+                <h2 class="article-item__title">Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
+                <p class="article-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident alias veritatis perferendis facilis soluta illo accusamus esse odio inventore.</p>
+                <a class="article-item__link" href="/">View full article</a>
+            </div>
+            <div class="article-item">
+                <img class="article-item__image" src="./css-assets/content-image.png"/>
+                <h2 class="article-item__title">Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
+                <p class="article-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident alias veritatis perferendis facilis soluta illo accusamus esse odio inventore.</p>
+                <a class="article-item__link" href="/">View full article</a>
+            </div>
+            <div class="article-item">
+                <img class="article-item__image" src="./css-assets/content-image.png"/>
+                <h2 class="article-item__title">Roboto 40px Size, Spacing 44px - Comment On The Importance Of Human Life</h2>
+                <p class="article-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim provident alias veritatis perferendis facilis soluta illo accusamus esse odio inventore.</p>
+                <a class="article-item__link" href="/">View full article</a>
+            </div>
+        </div>
+        <button>Load more</button>
+    </div>
+    <div class="contact"> 
+        <h2 class="contact__title">Contact Form</h2>
+        <form class="contact__form" action="/action_page.php">
+            <label for="name">Contact name</label>
+            <input class="contact__form__input" type="text" id="name">
 
+            <label for="email">Email address</label>
+            <input class="contact__form__input" type="email" id="email">
+        
+            <label for="message">Message</label>
+            <textarea class="contact__form__textarea" id="message" ></textarea>
+        
+
+            <button type="submit">Send message</button>
+        </form>
+    </div>
+    <footer>
+        <p>2016 Locastic Teest Page</p>
+        <p>By Frontend Developer</p>
     </footer>
 </body>
 </html>

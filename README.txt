@@ -1,0 +1,1 @@
+Run in console : npm run build ; // building css files and installing neccesary npm packages 

@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="contact.js"></script>
     <script src="appearElements.js"></script>
 </head>
 <body>
@@ -87,18 +88,19 @@
         <button class="article-load">Load more</button>
         <div class="contact"> 
             <h2 class="contact__title">Contact Form</h2>
-            <form class="contact__form" action="/action_page.php">
+            <form class="contact__form" onsubmit="submitForm(); return false;">
                 <label for="name">Contact name</label>
-                <input class="contact__form__input" type="text" id="name">
+                <input class="contact__form__input" type="text" id="name" required>
 
                 <label for="email">Email address</label>
-                <input class="contact__form__input" type="email" id="email">
+                <input class="contact__form__input" type="email" id="email" required>
             
                 <label for="message">Message</label>
-                <textarea class="contact__form__textarea" id="message" ></textarea>
+                <textarea class="contact__form__textarea" id="message" required></textarea>
             
 
-                <button type="submit">Send message</button>
+                <button id="send" type="submit">Send message</button>
+                <span id="error-message"></span>
             </form>
         </div>
     </div>

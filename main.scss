@@ -411,9 +411,13 @@ header {
             width: 100%;
             margin: 0;
             margin-bottom: 18px;
-            padding: 0 26px;
+            padding: 26px;
             box-sizing: border-box;
             
+            font-size:22px;
+            font-weight: 500;
+            line-height: 36px;
+            color:$secondary-color;
 
             &:hover{
                 border:1px &$primary-color;
